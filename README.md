@@ -1,7 +1,7 @@
 # 3D-Generalist
 
 <div align="left">
-    <a href="=https://ai.stanford.edu/~sunfanyun/3d-generalist/"><img src="https://img.shields.io/badge/🌐 Website-Visit-orange"></a>
+    <a href="https://ai.stanford.edu/~sunfanyun/3d-generalist/"><img src="https://img.shields.io/badge/🌐 Website-Visit-orange"></a>
     <a href=""><img src="https://img.shields.io/badge/arXiv-PDF-blue"></a>
 </div>
 
