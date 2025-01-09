@@ -1,0 +1,12 @@
+
+[package]
+    archivePath = "./archives/omni.replicator.object/omni.replicator.object-0.3.5+lx64.zip"
+
+    [package.target]
+
+        [package.target.platform]
+            0 = "linux-x86_64"
+
+    [package.publish]
+        kitVersion = "106.0.0+release.117823.91f0101f.gl"
+        date = 1722011118

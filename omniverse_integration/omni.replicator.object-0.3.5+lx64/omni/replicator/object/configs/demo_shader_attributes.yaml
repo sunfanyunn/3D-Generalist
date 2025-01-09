@@ -1,0 +1,48 @@
+omni.replicator.object:
+  version: 0.3.5
+  parent_config: standard
+  seed: 0
+  num_frames: 3
+  default_camera:
+    type: camera
+    camera_parameters: $[/camera_parameters]
+    transform_operators:
+    - rotateY: 60
+    - rotateX: -60
+    - translate:
+      - 0
+      - 0
+      - 300
+  mesh:
+    tracked: true
+    type: geometry
+    subtype: mesh
+    usd_path: omniverse://content.ov.nvidia.com/NVIDIA/Assets/ArchVis/Residential/Furniture/Desks/Desk_01.usd
+    transform_operators:
+    - rotateXYZ:
+      - -90
+      - 0
+      - 0
+    shader_attributes:
+      texture_rotate:
+        distribution_type: range
+        start: -180
+        end: 180
+      diffuse_tint:
+        distribution_type: range
+        start:
+        - 0
+        - 0
+        - 0
+        end:
+        - 2
+        - 2
+        - 2
+      texture_scale:
+        distribution_type: range
+        start:
+        - 0.2
+        - 0.2
+        end:
+        - 0.7
+        - 0.7

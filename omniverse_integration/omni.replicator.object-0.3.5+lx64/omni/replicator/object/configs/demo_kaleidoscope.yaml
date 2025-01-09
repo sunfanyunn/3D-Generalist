@@ -1,0 +1,42 @@
+omni.replicator.object:
+  basic_shape:
+    tracked: true
+    color:
+    - 0.5 + 0.5 * math.cos(2 * math.pi * $[index] / $[count])
+    - 0.5 + 0.5 * math.cos(2 * math.pi * ($[index] / $[count] + 0.33))
+    - 0.5 + 0.5 * math.cos(2 * math.pi * ($[index] / $[count] + 0.67))
+    count: 10
+    subtype: torus
+    transform_operators:
+    - translate:
+      - 10
+      - math.sin($[../index] / 2 + 2 * $[seed]) * 60
+      - ($[../index] - ($[../count] - 1) / 2) * 50
+    - rotateX:
+        distribution_type: range
+        start: -180
+        end: 180
+    - rotateY:
+        distribution_type: range
+        start: -180
+        end: 180
+    - scale:
+      - $[/torus_size]
+      - $[/torus_size]
+      - $[/torus_size]
+    type: geometry
+  default_camera:
+    camera_parameters: $[/camera_parameters]
+    transform_operators:
+    - rotateY: 90
+    - rotateX: -10
+    - translate:
+      - 0
+      - 0
+      - 600
+    type: camera
+  gravity: 10000
+  num_frames: 5
+  parent_config: standard
+  torus_size: 0.5
+  version: 0.3.5

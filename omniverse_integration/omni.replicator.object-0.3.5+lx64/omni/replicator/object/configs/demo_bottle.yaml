@@ -1,0 +1,114 @@
+omni.replicator.object:
+  bottle:
+    base_effector:
+      distribution_type: range
+      end: 1
+      start: 0
+    color:
+      distribution_type: range
+      end:
+      - 1
+      - 1
+      - 1
+      start:
+      - 0
+      - 0
+      - 0
+    count: 3
+    horizontal_effector:
+      distribution_type: range
+      end: 1
+      start: 0
+    neck_effector:
+      distribution_type: range
+      end: 1
+      start: 0
+    subtype: bottle
+    texture_path:
+      distribution_type: folder
+      suffix: jpg
+      value: PATH_TO_LABEL_IMAGES
+    tracked: true
+    transform_operators:
+    - translate:
+        distribution_type: range
+        end:
+        - 60
+        - 70
+        - 150
+        start:
+        - -60
+        - 70
+        - -150
+    - rotateY:
+        distribution_type: range
+        end: 180
+        start: -180
+    type: geometry
+    vertical_effector:
+      distribution_type: range
+      end: 1
+      start: 0
+  default_camera:
+    camera_parameters: $[/camera_parameters]
+    transform_operators:
+    - translate_outer:
+      - 0
+      - 50
+      - 0
+    - rotateY:
+        distribution_type: range
+        end: 180
+        start: -180
+    - rotateX: -30
+    - translate:
+        distribution_type: range
+        end:
+        - 0
+        - 0
+        - 400
+        start:
+        - 0
+        - 0
+        - 300
+    type: camera
+  num_frames: 4
+  parent_config: standard
+  plane:
+    material_path:
+      distribution_type: set
+      values: $[/carpets]
+    subtype: plane
+    transform_operators:
+    - translate:
+      - 0
+      - -150
+      - 0
+    - scale:
+      - 10
+      - 10
+      - 10
+    type: geometry
+  seed: 1
+  table:
+    physics: collision
+    subtype: mesh
+    type: geometry
+    usd_path:
+      distribution_type: set
+      values:
+      - omniverse://content.ov.nvidia.com/NVIDIA/Assets/ArchVis/Residential/Furniture/Desks/Desk_01.usd
+    transform_operators:
+    - translate:
+      - 15
+      - -170
+      - 0
+    - rotateXYZ:
+      - -90
+      - 0
+      - 0
+    - scale:
+      - 2.2
+      - 2.2
+      - 2.2
+  version: 0.3.5

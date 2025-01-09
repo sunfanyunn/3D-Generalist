@@ -1,0 +1,7 @@
+omni.replicator.object:
+  num_frames: 3
+  seed: 0
+  output_path: PATH_TO_OUTPUT
+  screen_height: 2160
+  screen_width: 3840
+  version: 0.3.5

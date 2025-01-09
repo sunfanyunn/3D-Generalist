@@ -1,0 +1,145 @@
+omni.replicator.object:
+  version: 0.3.5
+  num_frames: 3
+  output_path: /home/jenkins/agent/workspace/dev-omni-replicator-retail-docker-L0/unittest_output_harmonizer_pallet
+  seed: 4
+  inter_frame_time: 2
+  gravity: 1000
+  angular_damping: 1000
+  linear_damping: 5
+  friction: 1
+  screen_height: 1080
+  screen_width: 1920
+  camera_parameters:
+    far_clip: 100000
+    focal_length: 14.228393962367306
+    horizontal_aperture: 20.955
+    near_clip: 0.1
+    screen_height: $[/screen_height]
+    screen_width: $[/screen_width]
+  default_camera:
+    camera_parameters: $[/camera_parameters]
+    transform_operators:
+    - rotateY: 0
+    - rotateX: -20
+    - translate:
+      - 0
+      - 0
+      - 400
+    type: camera
+  distant_light:
+    color:
+      distribution_type: range
+      end:
+      - 1.3
+      - 1.3
+      - 1.3
+      start:
+      - 0.7
+      - 0.7
+      - 0.7
+    count: 5
+    intensity:
+      distribution_type: range
+      end: 600
+      start: 150
+    subtype: distant
+    transform_operators:
+    - rotateY:
+        distribution_type: range
+        end: 180
+        start: -180
+    - rotateX:
+        distribution_type: range
+        end: -10
+        start: -40
+    type: light
+  dome_light:
+    type: light
+    subtype: dome
+    color:
+      distribution_type: range
+      start:
+      - 0.7
+      - 0.7
+      - 0.7
+      end:
+      - 1.3
+      - 1.3
+      - 1.3
+    intensity:
+      distribution_type: range
+      start: 1000
+      end: 3000
+    transform_operators:
+    - rotateX: 270
+  bin_pack_boxes_H:
+    harmonizer_type: bin_pack
+    bin_size:
+    - 100
+    - 100
+    - 100
+  box_H:
+    distribution_type: folder
+    suffix: usd
+    value: /home/jenkins/agent/workspace/dev-omni-replicator-retail-docker-L0/fst02_unittest_v3/
+  box:
+    count: 100
+    physics: rigidbody
+    type: geometry
+    subtype: mesh
+    tracked: false
+    transform_operators:
+    - translate:
+      - 0
+      - 80
+      - 0
+    - transform:
+        distribution_type: harmonized
+        harmonizer_name: bin_pack_boxes_H
+        pitch: local_aabb
+    - scale:
+      - 0.5
+      - 0.5
+      - 0.5
+    usd_path: $[/box_H]
+  pallets_root: omniverse://content.ov.nvidia.com/NVIDIA/Assets/DigitalTwin/Assets/Warehouse/Shipping/Pallets
+  pallets:
+  - $[/pallets_root]/Metal/Aluminum_A/AluminumPallet_A01_PR_NVD_01.usd
+  - $[/pallets_root]/Metal/Aluminum_A/AluminumPallet_A02_PR_NVD_01.usd
+  - $[/pallets_root]/Metal/GalvanizedSteel_A/GalvanizedSteelPallet_A01_PR_NVD_01.usd
+  - $[/pallets_root]/Plastic/ClosedDeckExport_A/ClosedDeckExportPallet_A01_PR_NVD_01.usd
+  pallet:
+    physics: rigidbody
+    type: geometry
+    subtype: mesh
+    tracked: true
+    transform_operators:
+    - translate:
+      - 0
+      - 15
+      - 0
+    - rotateXYZ:
+      - 0
+      - -90
+      - -90
+    usd_path:
+      distribution_type: set
+      values: $[/pallets]
+  warehouse:
+    type: geometry
+    subtype: mesh
+    usd_path: omniverse://content.ov.nvidia.com/NVIDIA/Assets/Isaac/2023.1.1/Isaac/Environments/Simple_Warehouse/warehouse.usd
+    transform_operators:
+    - translate:
+      - -200
+      - 0.1
+      - 0
+    - rotateXYZ:
+      - 0
+      - -90
+      - -90
+    - scale:
+      - 100
+      - 100
+      - 100

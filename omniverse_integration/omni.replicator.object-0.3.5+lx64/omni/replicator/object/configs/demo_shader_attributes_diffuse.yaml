@@ -1,0 +1,30 @@
+omni.replicator.object:
+  version: 0.3.5
+  parent_config: standard
+  seed: 5
+  num_frames: 3
+  default_camera:
+    type: camera
+    camera_parameters: $[/camera_parameters]
+    transform_operators:
+    - rotateY: 60
+    - rotateX: -60
+    - translate:
+      - 0
+      - 0
+      - 300
+  mesh:
+    type: geometry
+    subtype: mesh
+    usd_path: PATH_TO_BOX
+    transform_operators:
+    - rotateX:
+        distribution_type: range
+        start: -180
+        end: 180
+    - rotateY:
+        distribution_type: range
+        start: -180
+        end: 180
+    shader_attributes:
+      diffuse_texture: <color_map>

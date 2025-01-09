@@ -1,0 +1,45 @@
+omni.replicator.object:
+  version: 0.3.5
+  parent_config: global
+  num_frames: 5
+  dome_light:
+    type: light
+    subtype: dome
+    intensity: 1000
+  rotate_H:
+    distribution_type: range
+    start: -180
+    end: 180
+  oro:
+    count: 2
+    type: geometry
+    subtype: mesh
+    usd_path: PATH_TO_oro.usd
+    transform_operators:
+    - translate:
+      - ($[../index] % 2 - 0.5) * 600
+      - 0
+      - 0
+    - rotateY: $[/rotate_H]
+    - scale:
+      - 150
+      - 150
+      - 150
+    - translate_local:
+      - 0
+      - 0
+      - 0
+  default_camera:
+    type: camera
+    camera_parameters: $[/camera_parameters]
+    transform_operators:
+    - translate_global:
+      - 0
+      - 0
+      - 0
+    - rotateY: 0
+    - rotateX: -30
+    - translate:
+      - 0
+      - 0
+      - 1200

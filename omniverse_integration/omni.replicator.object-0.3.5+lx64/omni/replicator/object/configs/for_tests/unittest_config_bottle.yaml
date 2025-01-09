@@ -1,0 +1,139 @@
+omni.replicator.object:
+  bottle:
+    base_effector:
+      distribution_type: range
+      end: 1
+      start: 0
+    color:
+      distribution_type: range
+      end:
+      - 1
+      - 1
+      - 1
+      start:
+      - 0
+      - 0
+      - 0
+    count: 3
+    horizontal_effector:
+      distribution_type: range
+      end: 1
+      start: 0
+    neck_effector:
+      distribution_type: range
+      end: 1
+      start: 0
+    subtype: bottle
+    texture_path:
+      distribution_type: folder
+      suffix: jpg
+      value: $[/resources_root]/background_images
+    tracked: true
+    transform_operators:
+    - translate:
+        distribution_type: range
+        end:
+        - 60
+        - 70
+        - 150
+        start:
+        - -60
+        - 70
+        - -150
+    - rotateY:
+        distribution_type: range
+        end: 180
+        start: -180
+    type: geometry
+    vertical_effector:
+      distribution_type: range
+      end: 1
+      start: 0
+  camera_parameters:
+    far_clip: 100000
+    focal_length: 14.228393962367306
+    horizontal_aperture: 20.955
+    near_clip: 0.1
+    screen_height: $[/screen_height]
+    screen_width: $[/screen_width]
+  carpets:
+  - $[/carpets_root]/Carpet_Beige.mdl
+  - $[/carpets_root]/Carpet_Berber_Gray.mdl
+  carpets_root: omniverse://isaac-dev.ov.nvidia.com/NVIDIA/Materials/2023_1/Base/Carpet
+  default_camera:
+    camera_parameters: $[/camera_parameters]
+    transform_operators:
+    - translate_outer:
+      - 0
+      - 50
+      - 0
+    - rotateY:
+        distribution_type: range
+        end: 180
+        start: -180
+    - rotateX: -30
+    - translate:
+        distribution_type: range
+        end:
+        - 0
+        - 0
+        - 400
+        start:
+        - 0
+        - 0
+        - 300
+    type: camera
+  dome_light:
+    intensity:
+      distribution_type: range
+      end: 3000
+      start: 1000
+    subtype: dome
+    texture_path:
+      distribution_type: set
+      values: $[/skies]
+    transform_operators:
+    - rotateX: 270
+    type: light
+  num_frames: 3
+  output_path: /home/jenkins/agent/workspace/dev-omni-replicator-retail-docker-L0/unittest_output_bottle
+  pallets:
+  - $[/pallets_root]/Metal/Aluminum_A/AluminumPallet_A01_PR_NVD_01.usd
+  - $[/pallets_root]/Metal/Aluminum_A/AluminumPallet_A02_PR_NVD_01.usd
+  - $[/pallets_root]/Metal/GalvanizedSteel_A/GalvanizedSteelPallet_A01_PR_NVD_01.usd
+  pallets_root: omniverse://isaac-dev.ov.nvidia.com/NVIDIA/Assets/DigitalTwin/Assets/Warehouse/Shipping/Pallets
+  plane:
+    material_path:
+      distribution_type: set
+      values: $[/carpets]
+    subtype: plane
+    transform_operators:
+    - translate:
+      - 0
+      - -150
+      - 0
+    - scale:
+      - 10
+      - 10
+      - 10
+    type: geometry
+  resources_root: /home/jenkins/agent/workspace/dev-omni-replicator-retail-docker-L0/fst02_unittest_v1
+  resources_root_2: /home/jenkins/agent/workspace/dev-omni-replicator-retail-docker-L0/fst02_unittest_v2
+  screen_height: 544
+  screen_width: 960
+  seed: 2
+  skies:
+  - $[/skies_root]/2022_1/Skies/Clear/lakeside.hdr
+  - $[/skies_root]/2022_1/Skies/Clear/mealie_road.hdr
+  - $[/skies_root]/2022_1/Skies/Clear/noon_grass.hdr
+  skies_root: omniverse://isaac-dev.ov.nvidia.com/NVIDIA/Assets/Skies
+  table:
+    physics: collision
+    subtype: mesh
+    type: geometry
+    usd_path:
+      distribution_type: set
+      values:
+      - $[/resources_root_2]/Table_and_Chairs/table_and_chairs.usdc
+      - $[/resources_root_2]/Wooden_Table/wooden_table.usdc
+  version: 0.3.5

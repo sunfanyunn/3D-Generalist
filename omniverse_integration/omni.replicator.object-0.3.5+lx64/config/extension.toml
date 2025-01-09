@@ -1,0 +1,96 @@
+[package]
+# Semantic Versioning is used: https://semver.org/
+version = "0.3.5"
+
+# Lists people or organizations that are considered the "authors" of the package.
+authors = ["NVIDIA METROPOLIS PERF TEAM"]
+
+# The title and description fields are primarily for displaying extension info in UI
+title = "omni replicator object"
+description="A python extension to generate synthetic images."
+
+# Path (relative to the root) or content of readme markdown file for UI.
+readme  = "docs/README.md"
+
+# URL of the extension source repository.
+repository = "https://gitlab-master.nvidia.com/metropolis-perf/fst_v0.2/omni.replicator.retail"
+
+# One of categories for UI.
+category = "Synthetic Data Generation"
+
+# Keywords for the extension
+keywords = ["kit", "object", "synthetic data"]
+
+# Location of change log file in target (final) folder of extension, relative to the root.
+# More info on writing changelog: https://keepachangelog.com/en/1.0.0/
+changelog="docs/CHANGELOG.md"
+
+# Preview image and icon. Folder named "data" automatically goes in git lfs (see .gitattributes file).
+# Preview image is shown in "Overview" of Extensions window. Screenshot of an extension might be a good preview image.
+preview_image = "data/preview.png"
+
+# Icon is shown in Extensions window, it is recommended to be square, of size 256x256.
+icon = "data/icon.png"
+
+# pip prebundle makes this extension os specific
+writeTarget.platform = true
+
+# Use omni.ui to build simple UI
+[dependencies]
+"omni.kit.uiapp" = {}
+"omni.replicator.core" = {}
+"omni.physx" = {}
+"omni.usd.core" = {}
+"omni.kit.renderer.core" = {}
+"omni.kit.viewport.window" = {}
+"omni.timeline" = {}
+"omni.pip.compute" = {}
+"omni.kit.pip_archive" = {}
+"omni.kit.capture.viewport" = {}
+
+# Main python module this extension provides, it will be publicly available as "import omni.replicator.object".
+[[python.module]]
+name = "omni.replicator.object"
+
+[[python.module]]
+name = "yaml"
+path = "pip_prebundle"
+
+[[python.module]]
+name = "py3dbp"
+path = "pip_prebundle"
+
+[[python.module]]
+name = "regex"
+path = "pip_prebundle"
+
+[[python.module]]
+name = "trimesh"
+path = "pip_prebundle"
+
+[[python.module]]
+path = "pip_prebundle"
+
+[[test]]
+# Extra dependencies only to be used during test run
+args = [
+    "--no-window",
+    "--/windowless=True",
+    "--/isTest=True",
+    "--/omni/replicator/asyncRendering=False",
+    "--/app/settings/fabricDefaultStageFrameHistoryCount=7",
+    "--/log/level=info",
+    "--/log/file=/tmp/unittest.log",
+    "--/rtx/rendermode='RayTracedLighting'",
+    "--/rtx/pathtracing/totalSpp=16",
+    "--/app/extensions/fastImporter/enabled=false",
+]
+dependencies = [
+    "omni.kit.ui_test", # UI testing extension
+    "omni.usd.core",
+    "omni.kit.test",
+    "omni.kit.renderer.core",
+    "omni.kit.viewport.window",
+    "omni.timeline",
+    "omni.pip.compute"
+]

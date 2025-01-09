@@ -1,0 +1,44 @@
+omni.replicator.object:
+  version: 0.3.5
+  parent_config: standard
+  seed: 20
+  bin_pack_global_H: # 1 big bin
+    harmonizer_type: bin_pack
+    bin_size:
+    - 1600
+    - 200
+    - 1600
+  bins: # dim of 4 small bins
+    count: 8
+    dimension:
+      distribution_type: range
+      start:
+      - 100
+      - 200
+      - 300
+      end:
+      - 400
+      - 200
+      - 400
+  transform_global: # transforms of 4 small bins
+    count: 8
+    distribution_type: harmonized
+    harmonizer_name: bin_pack_global_H
+    pitch:
+    - - -$[/bins_$[index]/dimension~0] / 2 * 1.5
+      - -$[/bins_$[index]/dimension~1] / 2
+      - -$[/bins_$[index]/dimension~2] / 2 * 1.5
+    - - $[/bins_$[index]/dimension~0] / 2 * 1.5
+      - $[/bins_$[index]/dimension~1] / 2
+      - $[/bins_$[index]/dimension~2] / 2 * 1.5
+  cube:
+    count: 8
+    type: geometry
+    subtype: cube
+    transform_operators:
+    - transform: $[/transform_global_$[../index]]
+    - scale: $[/bins_$[../index]/dimension]
+    - scale_basic:
+      - 0.01
+      - 0.01
+      - 0.01

@@ -1,0 +1,61 @@
+omni.replicator.object:
+  version: 0.3.5
+  parent_config: standard
+  seed: 20
+  bin_pack_global_H: # 1 big bin
+    harmonizer_type: bin_pack
+    bin_size:
+    - 1600
+    - 200
+    - 1600
+  bins: # dim of 4 small bins
+    count: 8
+    dimension:
+      distribution_type: range
+      start:
+      - 100
+      - 200
+      - 300
+      end:
+      - 400
+      - 200
+      - 300
+  transform_global: # transforms of 4 small bins
+    count: 8
+    distribution_type: harmonized
+    harmonizer_name: bin_pack_global_H
+    pitch:
+    - - -$[/bins_$[index]/dimension~0] / 2 * 1.5
+      - -$[/bins_$[index]/dimension~1] / 2
+      - -$[/bins_$[index]/dimension~2] / 2 * 1.5
+    - - $[/bins_$[index]/dimension~0] / 2 * 1.5
+      - $[/bins_$[index]/dimension~1] / 2
+      - $[/bins_$[index]/dimension~2] / 2 * 1.5
+  bin_pack_H: # 4 small bins
+    count: 8
+    harmonizer_type: bin_pack
+    bin_size: $[/bins_$[index]/dimension]
+  per_group_count: 50
+  selected_path:
+    count: 50
+    distribution_type: folder
+    suffix: usd
+    value: /home/startup/Desktop/2024/common/boxes #PATH_TO_BOXES
+  mesh:
+    count: 400
+    physics: rigidbody
+    subtype: mesh
+    tracked: true
+    group_num: $[index]//$[/per_group_count]
+    transform_operators:
+    - transform_global: $[/transform_global_$[../group_num]]
+    - transform:
+        distribution_type: harmonized
+        harmonizer_name: bin_pack_H_$[../group_num]
+        pitch: local_aabb
+    - scale:
+      - 1
+      - 1
+      - 1
+    type: geometry
+    usd_path: $[/selected_path_$[group_num]]

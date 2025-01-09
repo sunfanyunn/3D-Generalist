@@ -1,0 +1,61 @@
+omni.replicator.object:
+  version: 0.3.5
+  parent_config: global
+  num_frames: 60
+  seed: 0
+  dome_light:
+    type: light
+    subtype: dome
+    intensity: 500
+  default_camera:
+    type: camera
+    camera_parameters: $[/camera_parameters]
+    transform_operators:
+    - translate_global:
+      - 0
+      - 0
+      - 0 #1000
+    - rotateY: 30
+    - rotateX: -30
+    - translate:
+      - 0
+      - 0
+      - 1000
+  base:
+    type: geometry
+    subtype: mesh
+    usd_path: PATH_TO_observatory_base.usd
+    transform_operators:
+    #- rotateY: $[seed]
+    - scale:
+      - 150
+      - 150
+      - 150
+  scope:
+    type: geometry
+    subtype: mesh
+    usd_path: PATH_TO_observatory_scope.usd
+    transform_operators:
+    #- rotateX: $[seed] * -1
+    #- rotateY: $[seed]
+    #- rotateX: -30
+    - translate:
+      - 0
+      - 0
+      - $[seed] - 40
+    - scale:
+      - 150
+      - 150
+      - 150
+  shaft:
+    type: geometry
+    subtype: mesh
+    usd_path: PATH_TO_observatory_shaft.usd
+    transform_operators:
+    #- rotateX: $[seed] * -1
+    #- rotateY: $[seed]
+    #- rotateX: -30
+    - scale:
+      - 150
+      - 150
+      - 150

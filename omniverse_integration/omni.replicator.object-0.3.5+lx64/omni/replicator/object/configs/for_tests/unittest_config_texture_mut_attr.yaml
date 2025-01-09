@@ -1,0 +1,58 @@
+omni.replicator.object:
+  version: 0.3.5
+  seed: 5
+  num_frames: 10
+  screen_height: 1080
+  screen_width: 1920
+  output_path: /home/jenkins/agent/workspace/dev-omni-replicator-retail-docker-L0/unittest_output_texture_mut_attr
+  camera_parameters:
+    far_clip: 100000
+    focal_length: 14.228393962367306
+    horizontal_aperture: 20.955
+    near_clip: 0.1
+    screen_height: $[/screen_height]
+    screen_width: $[/screen_width]
+  skies_root: omniverse://content.ov.nvidia.com/NVIDIA/Assets/Skies
+  skies:
+  - $[/skies_root]/2022_1/Skies/Clear/lakeside.hdr
+  - $[/skies_root]/2022_1/Skies/Clear/mealie_road.hdr
+  - $[/skies_root]/2022_1/Skies/Clear/noon_grass.hdr
+  - $[/skies_root]/2022_1/Skies/Clear/qwantani.hdr
+  - $[/skies_root]/2022_1/Skies/Clear/signal_hill_sunrise.hdr
+  dome_light:
+    intensity:
+      distribution_type: range
+      end: 3000
+      start: 1000
+    subtype: dome
+    texture_path:
+      distribution_type: set
+      values: $[/skies]
+    transform_operators:
+    - rotateX: 270
+    type: light
+  default_camera:
+    type: camera
+    camera_parameters: $[/camera_parameters]
+    transform_operators:
+    - rotateY: 60
+    - rotateX: -60
+    - translate:
+      - 0
+      - 0
+      - 300
+  mesh:
+    type: geometry
+    subtype: mesh
+    usd_path: /home/jenkins/agent/workspace/dev-omni-replicator-retail-docker-L0/fst02_unittest_v3/banza/banza.usd
+    transform_operators:
+    - rotateX:
+        distribution_type: range
+        start: -180
+        end: 180
+    - rotateY:
+        distribution_type: range
+        start: -180
+        end: 180
+    shader_attributes:
+      diffuse_texture: <random_mutation>

@@ -1,0 +1,40 @@
+omni.replicator.object:
+  version: 0.3.5
+  parent_config: global
+  seed: 0
+  num_frames: 3 #120
+  dome_light:
+    type: light
+    subtype: dome
+    intensity: 1000
+  total_num_frames: $[num_frames]
+  oro:
+    count: 3
+    type: geometry
+    subtype: mesh
+    usd_path: PATH_TO_ORO
+    transform_operators:
+    - translate:
+      - (2 * $[seed] / $[num_frames] - 1) * 400 * ($[../index] + 1) * 0.8
+      - ($[../index] - ($[../count] - 1) / 2) * 400
+      - 0
+    - rotateY: $[seed] / $[num_frames] * 360 * ($[../index] + 1)
+    - scale:
+      - 150
+      - 150
+      - 150
+    shader_attributes:
+      diffuse_color_constant:
+      - 0.5 + 0.5 * math.cos(2 * math.pi * $[seed] / $[num_frames] * ($[../index] + 1))
+      - 0.5 + 0.5 * math.cos(2 * math.pi * ($[seed] / $[num_frames] + 0.33) * ($[../index] + 1))
+      - 0.5 + 0.5 * math.cos(2 * math.pi * ($[seed] / $[num_frames] + 0.67) * ($[../index] + 1))
+  default_camera:
+    type: camera
+    camera_parameters: $[/camera_parameters]
+    transform_operators:
+    - rotateY: 0
+    - rotateX: 0
+    - translate:
+      - 0
+      - 0
+      - 1800

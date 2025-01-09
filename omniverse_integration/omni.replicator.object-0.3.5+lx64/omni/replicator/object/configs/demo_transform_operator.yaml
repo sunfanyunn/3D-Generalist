@@ -1,0 +1,49 @@
+omni.replicator.object:
+  version: 0.3.5
+  parent_config: standard
+  seed: 0
+  num_frames: 3
+  linear_damping: 10000
+  default_camera:
+    type: camera
+    camera_parameters: $[/camera_parameters]
+    transform_operators:
+    - rotateY: 0
+    - rotateX: -45
+    - translate:
+      - 0
+      - 0
+      - 1200
+  mesh:
+    count: 120
+    type: geometry
+    subtype: mesh
+    physics: rigidbody
+    usd_path:
+      distribution_type: folder
+      suffix: usd
+      value: PATH_TO_BOXES
+    transform_operators:
+    - translate_wave:
+      - 0
+      - 120 * math.cos($[../index] / $[../count] * 15 * math.pi + $[seed])
+      - 0
+    - rotateY: $[../index] / $[../count] * 360 * 2
+    - translate:
+      - $[../index] / $[../count] * 500
+      - 0
+      - 0
+    - rotateXYZ:
+        distribution_type: range
+        start:
+        - -180
+        - -180
+        - -180
+        end:
+        - 180
+        - 180
+        - 180
+    - scale:
+      - 0.5
+      - 0.5
+      - 0.5

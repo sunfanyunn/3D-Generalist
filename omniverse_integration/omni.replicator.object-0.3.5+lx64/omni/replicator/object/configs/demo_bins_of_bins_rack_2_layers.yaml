@@ -1,0 +1,108 @@
+omni.replicator.object:
+  version: 0.3.5
+  parent_config: standard
+  num_frames: 1
+  seed: 20
+  gravity: 10000
+  bin_pack_global_H: # 1 big bin
+    harmonizer_type: bin_pack
+    bin_size:
+    - 3000
+    - 200
+    - 3000
+  bins: # dim of 8 small bins
+    count: 8
+    dimension:
+    - 570
+    - 200
+    - 315
+  transform_global: # transforms of 8 small bins
+    count: 8
+    distribution_type: harmonized
+    harmonizer_name: bin_pack_global_H
+    pitch:
+    - - -$[/bins_$[index]/dimension~0] / 2 * 2
+      - -$[/bins_$[index]/dimension~1] / 2
+      - -$[/bins_$[index]/dimension~2] / 2 * 2
+    - - $[/bins_$[index]/dimension~0] / 2 * 2
+      - $[/bins_$[index]/dimension~1] / 2
+      - $[/bins_$[index]/dimension~2] / 2 * 2
+  bin_pack_H: # 8 small bins
+    count: 8
+    harmonizer_type: bin_pack
+    bin_size: $[/bins_$[index]/dimension]
+  bin_pack_hetero_H:
+    count: 8
+    harmonizer_type: bin_pack
+    bin_size: $[/bins_$[index]/dimension]
+  per_group_count: 50
+  selected_path:
+    count: 50
+    distribution_type: folder
+    suffix: usd
+    value: /home/startup/Desktop/2024/common/boxes #PATH_TO_BOXES
+  mesh:
+    count: 400
+    physics: rigidbody
+    subtype: mesh
+    tracked: true
+    group_num: $[index]//$[/per_group_count]
+    transform_operators:
+    - transform_global: $[/transform_global_$[../group_num]]
+    - transform:
+        distribution_type: harmonized
+        harmonizer_name: bin_pack_H_$[../group_num]
+        pitch: local_aabb
+    - scale:
+      - 1
+      - 1
+      - 1
+    type: geometry
+    usd_path: $[/selected_path_$[group_num]]
+  mesh_hetero:
+    count: 400
+    physics: rigidbody
+    subtype: mesh
+    tracked: true
+    group_num: $[index]//$[/per_group_count]
+    transform_operators:
+    - translate:
+      - 0
+      - 230
+      - 0
+    - transform_global: $[/transform_global_$[../group_num]]
+    - transform:
+        distribution_type: harmonized
+        harmonizer_name:   bin_pack_hetero_H_$[../group_num]
+        pitch: local_aabb
+    - scale:
+      - 1
+      - 1
+      - 1
+    type: geometry
+    usd_path:
+      distribution_type: folder
+      suffix: usd
+      value: /home/startup/Desktop/2024/common/boxes
+  rack:
+    count: 8
+    physics: collision
+    subtype: mesh
+    tracked: false
+    transform_operators:
+    - transform: $[/transform_global_$[../index]]
+    - translate:
+      - 0
+      - -400
+      - 0
+    - rotateY: 90
+    - rotateXYZ:
+      - 0
+      - -90
+      - -90
+    - scale:
+      - 4
+      - 4
+      - 4
+    type: geometry
+    usd_path: omniverse://content.ov.nvidia.com/NVIDIA/Assets/DigitalTwin/Assets/Warehouse/Shelving/Racks/Rack_L/Rack_L02_PR_NVD_01.usd

@@ -1,0 +1,79 @@
+omni.replicator.object:
+  camera_parameters:
+    far_clip: 100000
+    focal_length: 14.228393962367306
+    horizontal_aperture: 20.955
+    near_clip: 0.1
+    screen_height: $[/screen_height]
+    screen_width: $[/screen_width]
+  cube:
+    subtype: cube
+    tracked: true
+    transform_operators:
+    - scale:
+      - 0.1
+      - 0.1
+      - 0.1
+    type: geometry
+  default_camera:
+    camera_parameters: $[/camera_parameters]
+    transform_operators:
+    - rotateY:
+        distribution_type: range
+        end: 180
+        start: -180
+    - rotateX: -30
+    - translate:
+        distribution_type: range
+        end:
+        - 0
+        - 0
+        - 750
+        start:
+        - 0
+        - 0
+        - 500
+    type: camera
+  dome_light:
+    intensity:
+      distribution_type: range
+      end: 3000
+      start: 50.1
+    subtype: dome
+    texture_path:
+      distribution_type: set
+      values:
+      - $[/resources_root]/skies/adams_place_bridge_4k.hdr
+      - $[/resources_root]/skies/autoshop_01_4k.hdr
+    transform_operators:
+    - rotateX: 270
+    type: light
+  gravity: 0
+  mesh:
+    count: 10
+    has_physics: true
+    subtype: mesh
+    tracked: true
+    transform_operators:
+    - translate:
+        distribution_type: range
+        end:
+        - 15
+        - 15
+        - 15
+        start:
+        - -15
+        - -15
+        - -15
+    type: geometry
+    usd_path:
+      distribution_type: folder
+      suffix: usd
+      value: $[/resources_root]/main_objects
+  num_frames: 3
+  output_path: /home/jenkins/agent/workspace/dev-omni-replicator-retail-docker-L0/unittest_output
+  resources_root: /home/jenkins/agent/workspace/dev-omni-replicator-retail-docker-L0/fst02_unittest_v1
+  screen_height: 1080
+  screen_width: 1920
+  seed: 0
+  version: 0.3.5

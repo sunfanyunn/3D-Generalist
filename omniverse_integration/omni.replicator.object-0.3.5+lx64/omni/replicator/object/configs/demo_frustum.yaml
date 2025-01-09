@@ -1,0 +1,94 @@
+omni.replicator.object:
+  default_camera:
+    camera_parameters: $[/camera_parameters]
+    type: camera
+  distractors:
+    count: 1
+    physics: rigidbody
+    subtype: mesh
+    transform_operators:
+    - translate:
+        camera_parameters: $[/camera_parameters]
+        distance_max: 1200
+        distance_min: 800
+        distribution_type: camera_frustum
+        screen_space_range: 0.8
+    - rotateX:
+        distribution_type: range
+        start: -180
+        end: 180
+    - rotateY:
+        distribution_type: range
+        start: -180
+        end: 180
+    type: geometry
+    usd_path:
+      distribution_type: folder
+      suffix: usd
+      value: PATH_TO_DISTRACTORS
+  dome_light:
+    color:
+      distribution_type: range
+      end:
+      - 1.2
+      - 1.2
+      - 1.2
+      start:
+      - 0.8
+      - 0.8
+      - 0.8
+    intensity:
+      distribution_type: range
+      end: 3000
+      start: 500
+    subtype: dome
+    type: light
+  gravity: 0
+  main_objects:
+    count: 20
+    physics: rigidbody
+    subtype: mesh
+    tracked: true
+    transform_operators:
+    - translate:
+        camera_parameters: $[/camera_parameters]
+        distance_max: 600
+        distance_min: 200
+        distribution_type: camera_frustum
+        screen_space_range: 0.8
+    - rotateX:
+        distribution_type: range
+        start: -180
+        end: 180
+    - rotateY:
+        distribution_type: range
+        start: -180
+        end: 180
+    type: geometry
+    usd_path:
+      distribution_type: folder
+      suffix: usd
+      value: PATH_TO_MAIN_OBJECTS
+  parent_config: global
+  plane:
+    subtype: plane
+    texture_path:
+      distribution_type: folder
+      suffix: jpg
+      value: PATH_TO_BACKGROUND_IMAGES
+    transform_operators:
+    - translate:
+      - 0
+      - 0
+      - -5000
+    - rotateXYZ:
+      - -90
+      - 0
+      - 180
+    - scale:
+      - 5000 / 50 * $[/horizontal_aperture] / $[/focal_length] / 2
+      - 1
+      - 5000 / 50 * $[/horizontal_aperture] / $[/focal_length] / 2 * $[/screen_height]
+        / $[/screen_width]
+    type: geometry
+  version: 0.3.5
