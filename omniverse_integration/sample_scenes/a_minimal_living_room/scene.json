@@ -1,0 +1,1270 @@
+{
+    "objects": {
+        "walls_0": {
+            "description": "",
+            "category": "walls",
+            "placements": [
+                {
+                    "position": [
+                        -1.56,
+                        -1.45,
+                        1.5
+                    ],
+                    "rotation": 0.0,
+                    "scale": 1.0,
+                    "instance_id": null
+                }
+            ],
+            "bbox_size": null,
+            "material": {
+                "id": "Planks036B",
+                "description": "Rich, dark wood paneling with a polished finish, complemented by sections of light-colored cabinetry with a high-gloss surface"
+            },
+            "identifier": null,
+            "metadata": {
+                "polygon": [
+                    [
+                        -1.38,
+                        -1.45,
+                        0.0
+                    ],
+                    [
+                        -1.74,
+                        -1.45,
+                        0.0
+                    ],
+                    [
+                        -1.74,
+                        -1.45,
+                        3.0
+                    ],
+                    [
+                        -1.38,
+                        -1.45,
+                        3.0
+                    ]
+                ]
+            }
+        },
+        "walls_1": {
+            "description": "",
+            "category": "walls",
+            "placements": [
+                {
+                    "position": [
+                        -1.74,
+                        -2.58,
+                        1.5
+                    ],
+                    "rotation": 0.0,
+                    "scale": 1.0,
+                    "instance_id": null
+                }
+            ],
+            "bbox_size": null,
+            "material": {
+                "id": "Planks036B",
+                "description": "Rich, dark wood paneling with a polished finish, complemented by sections of light-colored cabinetry with a high-gloss surface"
+            },
+            "identifier": null,
+            "metadata": {
+                "polygon": [
+                    [
+                        -1.74,
+                        -1.45,
+                        0.0
+                    ],
+                    [
+                        -1.74,
+                        -3.7,
+                        0.0
+                    ],
+                    [
+                        -1.74,
+                        -3.7,
+                        3.0
+                    ],
+                    [
+                        -1.74,
+                        -1.45,
+                        3.0
+                    ]
+                ]
+            }
+        },
+        "walls_2": {
+            "description": "",
+            "category": "walls",
+            "placements": [
+                {
+                    "position": [
+                        -0.17,
+                        -3.7,
+                        1.5
+                    ],
+                    "rotation": 0.0,
+                    "scale": 1.0,
+                    "instance_id": null
+                }
+            ],
+            "bbox_size": null,
+            "material": {
+                "id": "Planks036B",
+                "description": "Rich, dark wood paneling with a polished finish, complemented by sections of light-colored cabinetry with a high-gloss surface"
+            },
+            "identifier": null,
+            "metadata": {
+                "polygon": [
+                    [
+                        -1.74,
+                        -3.7,
+                        0.0
+                    ],
+                    [
+                        1.39,
+                        -3.7,
+                        0.0
+                    ],
+                    [
+                        1.39,
+                        -3.7,
+                        3.0
+                    ],
+                    [
+                        -1.74,
+                        -3.7,
+                        3.0
+                    ]
+                ]
+            }
+        },
+        "walls_3": {
+            "description": "",
+            "category": "walls",
+            "placements": [
+                {
+                    "position": [
+                        1.39,
+                        -3.05,
+                        1.5
+                    ],
+                    "rotation": 0.0,
+                    "scale": 1.0,
+                    "instance_id": null
+                }
+            ],
+            "bbox_size": null,
+            "material": {
+                "id": "Planks036B",
+                "description": "Rich, dark wood paneling with a polished finish, complemented by sections of light-colored cabinetry with a high-gloss surface"
+            },
+            "identifier": null,
+            "metadata": {
+                "polygon": [
+                    [
+                        1.39,
+                        -3.7,
+                        0.0
+                    ],
+                    [
+                        1.39,
+                        -2.4,
+                        0.0
+                    ],
+                    [
+                        1.39,
+                        -2.4,
+                        3.0
+                    ],
+                    [
+                        1.39,
+                        -3.7,
+                        3.0
+                    ]
+                ]
+            }
+        },
+        "walls_4": {
+            "description": "",
+            "category": "walls",
+            "placements": [
+                {
+                    "position": [
+                        2.17,
+                        -2.4,
+                        1.5
+                    ],
+                    "rotation": 0.0,
+                    "scale": 1.0,
+                    "instance_id": null
+                }
+            ],
+            "bbox_size": null,
+            "material": {
+                "id": "Planks036B",
+                "description": "Rich, dark wood paneling with a polished finish, complemented by sections of light-colored cabinetry with a high-gloss surface"
+            },
+            "identifier": null,
+            "metadata": {
+                "polygon": [
+                    [
+                        1.39,
+                        -2.4,
+                        0.0
+                    ],
+                    [
+                        2.95,
+                        -2.4,
+                        0.0
+                    ],
+                    [
+                        2.95,
+                        -2.4,
+                        3.0
+                    ],
+                    [
+                        1.39,
+                        -2.4,
+                        3.0
+                    ]
+                ]
+            }
+        },
+        "walls_5": {
+            "description": "",
+            "category": "walls",
+            "placements": [
+                {
+                    "position": [
+                        2.95,
+                        -0.74,
+                        1.5
+                    ],
+                    "rotation": 0.0,
+                    "scale": 1.0,
+                    "instance_id": null
+                }
+            ],
+            "bbox_size": null,
+            "material": {
+                "id": "Planks036B",
+                "description": "Rich, dark wood paneling with a polished finish, complemented by sections of light-colored cabinetry with a high-gloss surface"
+            },
+            "identifier": null,
+            "metadata": {
+                "polygon": [
+                    [
+                        2.95,
+                        -2.4,
+                        0.0
+                    ],
+                    [
+                        2.95,
+                        0.92,
+                        0.0
+                    ],
+                    [
+                        2.95,
+                        0.92,
+                        3.0
+                    ],
+                    [
+                        2.95,
+                        -2.4,
+                        3.0
+                    ]
+                ]
+            }
+        },
+        "walls_6": {
+            "description": "",
+            "category": "walls",
+            "placements": [
+                {
+                    "position": [
+                        1.59,
+                        0.92,
+                        1.5
+                    ],
+                    "rotation": 0.0,
+                    "scale": 1.0,
+                    "instance_id": null
+                }
+            ],
+            "bbox_size": null,
+            "material": {
+                "id": "Planks036B",
+                "description": "Rich, dark wood paneling with a polished finish, complemented by sections of light-colored cabinetry with a high-gloss surface"
+            },
+            "identifier": null,
+            "metadata": {
+                "polygon": [
+                    [
+                        2.95,
+                        0.92,
+                        0.0
+                    ],
+                    [
+                        0.23,
+                        0.92,
+                        0.0
+                    ],
+                    [
+                        0.23,
+                        0.92,
+                        3.0
+                    ],
+                    [
+                        2.95,
+                        0.92,
+                        3.0
+                    ]
+                ]
+            }
+        },
+        "walls_7": {
+            "description": "",
+            "category": "walls",
+            "placements": [
+                {
+                    "position": [
+                        0.23,
+                        1.5,
+                        1.5
+                    ],
+                    "rotation": 0.0,
+                    "scale": 1.0,
+                    "instance_id": null
+                }
+            ],
+            "bbox_size": null,
+            "material": {
+                "id": "Planks036B",
+                "description": "Rich, dark wood paneling with a polished finish, complemented by sections of light-colored cabinetry with a high-gloss surface"
+            },
+            "identifier": null,
+            "metadata": {
+                "polygon": [
+                    [
+                        0.23,
+                        0.92,
+                        0.0
+                    ],
+                    [
+                        0.23,
+                        2.07,
+                        0.0
+                    ],
+                    [
+                        0.23,
+                        2.07,
+                        3.0
+                    ],
+                    [
+                        0.23,
+                        0.92,
+                        3.0
+                    ]
+                ]
+            }
+        },
+        "walls_8": {
+            "description": "",
+            "category": "walls",
+            "placements": [
+                {
+                    "position": [
+                        -0.57,
+                        2.07,
+                        1.5
+                    ],
+                    "rotation": 0.0,
+                    "scale": 1.0,
+                    "instance_id": null
+                }
+            ],
+            "bbox_size": null,
+            "material": {
+                "id": "Planks036B",
+                "description": "Rich, dark wood paneling with a polished finish, complemented by sections of light-colored cabinetry with a high-gloss surface"
+            },
+            "identifier": null,
+            "metadata": {
+                "polygon": [
+                    [
+                        0.23,
+                        2.07,
+                        0.0
+                    ],
+                    [
+                        -1.38,
+                        2.07,
+                        0.0
+                    ],
+                    [
+                        -1.38,
+                        2.07,
+                        3.0
+                    ],
+                    [
+                        0.23,
+                        2.07,
+                        3.0
+                    ]
+                ]
+            }
+        },
+        "walls_9": {
+            "description": "",
+            "category": "walls",
+            "placements": [
+                {
+                    "position": [
+                        -1.38,
+                        0.31,
+                        1.5
+                    ],
+                    "rotation": 0.0,
+                    "scale": 1.0,
+                    "instance_id": null
+                }
+            ],
+            "bbox_size": null,
+            "material": {
+                "id": "Planks036B",
+                "description": "Rich, dark wood paneling with a polished finish, complemented by sections of light-colored cabinetry with a high-gloss surface"
+            },
+            "identifier": null,
+            "metadata": {
+                "polygon": [
+                    [
+                        -1.38,
+                        2.07,
+                        0.0
+                    ],
+                    [
+                        -1.38,
+                        -1.45,
+                        0.0
+                    ],
+                    [
+                        -1.38,
+                        -1.45,
+                        3.0
+                    ],
+                    [
+                        -1.38,
+                        2.07,
+                        3.0
+                    ]
+                ]
+            }
+        },
+        "door_0": {
+            "description": "",
+            "category": "doors",
+            "placements": [
+                {
+                    "position": [
+                        0.84,
+                        -0.81
+                    ],
+                    "rotation": 0.0,
+                    "scale": 1.0,
+                    "instance_id": null
+                }
+            ],
+            "bbox_size": [
+                0.54,
+                0.0,
+                1.38
+            ],
+            "material": null,
+            "identifier": "/viscam/projects/SceneAug/airblender_foundation/tmp_logs/a_modern_kitchen/door_0.ply",
+            "metadata": {
+                "door_type": "single",
+                "onFloor": true,
+                "frame_material": {
+                    "id": "Wood029",
+                    "description": "solid wood with a dark finish"
+                },
+                "door_material": {
+                    "id": "Planks003",
+                    "description": "paneled wood"
+                },
+                "door_handle_material": {
+                    "id": "Metal034",
+                    "description": "gold-tone metal"
+                },
+                "width": 0.91,
+                "height": 2.03,
+                "bbox_on_wall": [
+                    0.44,
+                    -1.5,
+                    1.24,
+                    0.09
+                ],
+                "parent_obj": "walls_6"
+            }
+        },
+        "door_1": {
+            "description": "",
+            "category": "doors",
+            "placements": [
+                {
+                    "position": [
+                        -0.33,
+                        -0.74
+                    ],
+                    "rotation": 0.0,
+                    "scale": 1.0,
+                    "instance_id": null
+                }
+            ],
+            "bbox_size": [
+                0.47,
+                0.0,
+                1.51
+            ],
+            "material": null,
+            "identifier": "/viscam/projects/SceneAug/airblender_foundation/tmp_logs/a_modern_kitchen/door_1.ply",
+            "metadata": {
+                "door_type": "single",
+                "onFloor": true,
+                "frame_material": {
+                    "id": "Wood029",
+                    "description": "dark wood with a glossy finish"
+                },
+                "door_material": {
+                    "id": "Wood029",
+                    "description": "polished wood"
+                },
+                "door_handle_material": {
+                    "id": "WrinklesBrush003",
+                    "description": "black metal"
+                },
+                "width": 0.9,
+                "height": 2.05,
+                "bbox_on_wall": [
+                    -0.73,
+                    -1.5,
+                    0.07,
+                    0.16
+                ],
+                "parent_obj": "walls_8"
+            }
+        },
+        "window_2": {
+            "description": "",
+            "category": "windows",
+            "placements": [
+                {
+                    "position": [
+                        0.35,
+                        -0.76
+                    ],
+                    "rotation": 0.0,
+                    "scale": 1.0,
+                    "instance_id": null
+                }
+            ],
+            "bbox_size": [
+                0.0,
+                1.86,
+                1.87
+            ],
+            "material": null,
+            "identifier": "/viscam/projects/SceneAug/airblender_foundation/tmp_logs/a_modern_kitchen/window_2.ply",
+            "metadata": {
+                "window_type": "slider",
+                "onFloor": true,
+                "frame_material": {
+                    "id": "Pipe002",
+                    "description": "aluminum with a black finish"
+                },
+                "width": 2.0,
+                "height": 1.5,
+                "bbox_on_wall": [
+                    -0.58,
+                    -1.5,
+                    1.28,
+                    0.17
+                ],
+                "parent_obj": "walls_5"
+            }
+        },
+        "floors": {
+            "description": "",
+            "category": "floors",
+            "placements": [
+                {
+                    "position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "rotation": 0.0,
+                    "scale": 1.0,
+                    "instance_id": null
+                }
+            ],
+            "bbox_size": [
+                4.69,
+                5.78,
+                0.0
+            ],
+            "material": {
+                "id": "Marble004",
+                "description": "Shiny, polished marble flooring with subtle veining in soft beige and cream tones, enhancing the luxurious ambiance"
+            },
+            "identifier": null,
+            "metadata": {
+                "polygon": [
+                    [
+                        -1.38,
+                        2.07,
+                        0.0
+                    ],
+                    [
+                        0.23,
+                        2.07,
+                        0.0
+                    ],
+                    [
+                        0.23,
+                        0.92,
+                        0.0
+                    ],
+                    [
+                        2.95,
+                        0.92,
+                        0.0
+                    ],
+                    [
+                        2.95,
+                        -2.4,
+                        0.0
+                    ],
+                    [
+                        1.39,
+                        -2.4,
+                        0.0
+                    ],
+                    [
+                        1.39,
+                        -3.7,
+                        0.0
+                    ],
+                    [
+                        -1.74,
+                        -3.7,
+                        0.0
+                    ],
+                    [
+                        -1.74,
+                        -1.45,
+                        0.0
+                    ],
+                    [
+                        -1.38,
+                        -1.45,
+                        0.0
+                    ]
+                ]
+            }
+        },
+        "ceilings": {
+            "description": "",
+            "category": "ceilings",
+            "placements": [
+                {
+                    "position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "rotation": 0.0,
+                    "scale": 1.0,
+                    "instance_id": null
+                }
+            ],
+            "bbox_size": [
+                4.69,
+                5.78,
+                0.0
+            ],
+            "material": {
+                "id": "Leaking011A",
+                "description": "Smooth, white ceiling with integrated recessed lighting and a sleek, contemporary design"
+            },
+            "identifier": null,
+            "metadata": {
+                "polygon": [
+                    [
+                        -1.38,
+                        2.07,
+                        3.0
+                    ],
+                    [
+                        0.23,
+                        2.07,
+                        3.0
+                    ],
+                    [
+                        0.23,
+                        0.92,
+                        3.0
+                    ],
+                    [
+                        2.95,
+                        0.92,
+                        3.0
+                    ],
+                    [
+                        2.95,
+                        -2.4,
+                        3.0
+                    ],
+                    [
+                        1.39,
+                        -2.4,
+                        3.0
+                    ],
+                    [
+                        1.39,
+                        -3.7,
+                        3.0
+                    ],
+                    [
+                        -1.74,
+                        -3.7,
+                        3.0
+                    ],
+                    [
+                        -1.74,
+                        -1.45,
+                        3.0
+                    ],
+                    [
+                        -1.38,
+                        -1.45,
+                        3.0
+                    ]
+                ]
+            }
+        },
+        "default_light": {
+            "description": "default light at the center of the room",
+            "category": "lights",
+            "placements": [
+                {
+                    "position": [
+                        0.0,
+                        0.0,
+                        1.6
+                    ],
+                    "rotation": 0.0,
+                    "scale": 1.0,
+                    "instance_id": null
+                }
+            ],
+            "bbox_size": null,
+            "material": null,
+            "identifier": null,
+            "metadata": {
+                "light_intensity": 40,
+                "light_type": "point",
+                "light_color": [
+                    255,
+                    255,
+                    255
+                ]
+            }
+        },
+        "brown_leather_sofa_1": {
+            "description": "sofa_bed",
+            "category": "objects",
+            "placements": [
+                {
+                    "position": [
+                        0.5,
+                        -2.0,
+                        0.42
+                    ],
+                    "rotation": 0.0,
+                    "scale": 1.0,
+                    "instance_id": null
+                }
+            ],
+            "bbox_size": [
+                3.0,
+                1.97,
+                0.84
+            ],
+            "material": null,
+            "identifier": "cc397bf2484b488f85dcf844bf088559",
+            "metadata": {
+                "annotation": {
+                    "description": "A large, L-shaped sectional sofa with tufted cushions and a dark brown leather finish. It features a modern design with ample seating space and a comfortable backrest.",
+                    "category": "sectional sofa",
+                    "width": 300,
+                    "depth": 200,
+                    "height": 90,
+                    "volume": 5400,
+                    "materials": [
+                        "leather",
+                        "foam",
+                        "wood",
+                        "metal",
+                        "air"
+                    ],
+                    "composition": [
+                        0.5,
+                        0.2,
+                        0.15,
+                        0.1,
+                        0.05
+                    ],
+                    "mass": 150,
+                    "receptacle": false,
+                    "frontView": 0,
+                    "onCeiling": false,
+                    "onWall": false,
+                    "onFloor": true,
+                    "onObject": false,
+                    "uid": "cc397bf2484b488f85dcf844bf088559",
+                    "pose_z_rot_angle": -0.0,
+                    "scale": 0.9,
+                    "z_axis_scale": true,
+                    "dim_x": 3.0,
+                    "dim_y": 1.97,
+                    "dim_z": 0.84
+                },
+                "asset_url": "https://playcanvas-public.s3.amazonaws.com//viscam/data/objaverse_lvis_preprocessed/cc397bf2484b488f85dcf844bf088559/processed_asset.glb",
+                "lvis_category": "sofa_bed",
+                "thumbnail_url": "https://playcanvas-public.s3.amazonaws.com//viscam/data/objaverse_lvis_preprocessed/cc397bf2484b488f85dcf844bf088559/blender_renders/render_0.0.jpg"
+            }
+        },
+        "wooden_coffee_table_1": {
+            "description": "coffee_table",
+            "category": "objects",
+            "placements": [
+                {
+                    "position": [
+                        0.78,
+                        -1.1,
+                        0.25
+                    ],
+                    "rotation": 0.0,
+                    "scale": 1.0,
+                    "instance_id": null
+                }
+            ],
+            "bbox_size": [
+                0.9,
+                0.9,
+                0.45
+            ],
+            "material": null,
+            "identifier": "04346631ca1e4c66b93586ada9756110",
+            "metadata": {
+                "annotation": {
+                    "description": "A square wooden coffee table with a slatted top surface, featuring a lower shelf for storage. The table has a magazine placed on the top surface.",
+                    "category": "coffee table",
+                    "width": 90,
+                    "depth": 90,
+                    "height": 45,
+                    "volume": 364.5,
+                    "materials": [
+                        "wood",
+                        "paper",
+                        "air"
+                    ],
+                    "composition": [
+                        0.85,
+                        0.05,
+                        0.1
+                    ],
+                    "mass": 20,
+                    "receptacle": false,
+                    "frontView": 3,
+                    "onCeiling": false,
+                    "onWall": false,
+                    "onFloor": true,
+                    "onObject": true,
+                    "uid": "04346631ca1e4c66b93586ada9756110",
+                    "pose_z_rot_angle": -4.71,
+                    "scale": 0.45,
+                    "z_axis_scale": true,
+                    "dim_x": 0.9,
+                    "dim_y": 0.9,
+                    "dim_z": 0.45
+                },
+                "asset_url": "https://playcanvas-public.s3.amazonaws.com//viscam/data/objaverse_lvis_preprocessed/04346631ca1e4c66b93586ada9756110/processed_asset.glb",
+                "lvis_category": "coffee_table",
+                "thumbnail_url": "https://playcanvas-public.s3.amazonaws.com//viscam/data/objaverse_lvis_preprocessed/04346631ca1e4c66b93586ada9756110/blender_renders/render_0.0.jpg"
+            }
+        },
+        "ceiling_light_1": {
+            "description": "chandelier",
+            "category": "objects",
+            "placements": [
+                {
+                    "position": [
+                        -1.0,
+                        0.0,
+                        2.8
+                    ],
+                    "rotation": 0.0,
+                    "scale": 1.0,
+                    "instance_id": null
+                }
+            ],
+            "bbox_size": [
+                0.6,
+                0.6,
+                1.0
+            ],
+            "material": null,
+            "identifier": "5fc95fddd9cb4038b767fc5cba588c4b",
+            "metadata": {
+                "annotation": {
+                    "description": "An elegant chandelier with multiple arms, each holding a candle-like light bulb. It is suspended from the ceiling by a twisted, decorative rod.",
+                    "category": "chandelier",
+                    "width": 60,
+                    "depth": 60,
+                    "height": 100,
+                    "volume": 113,
+                    "materials": [
+                        "metal",
+                        "glass",
+                        "air"
+                    ],
+                    "composition": [
+                        0.6,
+                        0.3,
+                        0.1
+                    ],
+                    "mass": 15,
+                    "receptacle": false,
+                    "frontView": 0,
+                    "onCeiling": true,
+                    "onWall": false,
+                    "onFloor": false,
+                    "onObject": false,
+                    "uid": "5fc95fddd9cb4038b767fc5cba588c4b",
+                    "pose_z_rot_angle": -0.0,
+                    "scale": 1.0,
+                    "z_axis_scale": true,
+                    "dim_x": 0.6,
+                    "dim_y": 0.6,
+                    "dim_z": 1.0
+                },
+                "asset_url": "https://playcanvas-public.s3.amazonaws.com//viscam/data/objaverse_lvis_preprocessed/5fc95fddd9cb4038b767fc5cba588c4b/processed_asset.glb",
+                "lvis_category": "chandelier",
+                "thumbnail_url": "https://playcanvas-public.s3.amazonaws.com//viscam/data/objaverse_lvis_preprocessed/5fc95fddd9cb4038b767fc5cba588c4b/blender_renders/render_0.0.jpg"
+            }
+        },
+        "ceiling_light_2": {
+            "description": "chandelier",
+            "category": "objects",
+            "placements": [
+                {
+                    "position": [
+                        1.0,
+                        -3.0,
+                        2.8
+                    ],
+                    "rotation": 0.0,
+                    "scale": 1.0,
+                    "instance_id": null
+                }
+            ],
+            "bbox_size": [
+                0.6,
+                0.6,
+                1.0
+            ],
+            "material": null,
+            "identifier": "5fc95fddd9cb4038b767fc5cba588c4b",
+            "metadata": {
+                "annotation": {
+                    "description": "An elegant chandelier with multiple arms, each holding a candle-like light bulb. It is suspended from the ceiling by a twisted, decorative rod.",
+                    "category": "chandelier",
+                    "width": 60,
+                    "depth": 60,
+                    "height": 100,
+                    "volume": 113,
+                    "materials": [
+                        "metal",
+                        "glass",
+                        "air"
+                    ],
+                    "composition": [
+                        0.6,
+                        0.3,
+                        0.1
+                    ],
+                    "mass": 15,
+                    "receptacle": false,
+                    "frontView": 0,
+                    "onCeiling": true,
+                    "onWall": false,
+                    "onFloor": false,
+                    "onObject": false,
+                    "uid": "5fc95fddd9cb4038b767fc5cba588c4b",
+                    "pose_z_rot_angle": -0.0,
+                    "scale": 1.0,
+                    "z_axis_scale": true,
+                    "dim_x": 0.6,
+                    "dim_y": 0.6,
+                    "dim_z": 1.0
+                },
+                "asset_url": "https://playcanvas-public.s3.amazonaws.com//viscam/data/objaverse_lvis_preprocessed/5fc95fddd9cb4038b767fc5cba588c4b/processed_asset.glb",
+                "lvis_category": "chandelier",
+                "thumbnail_url": "https://playcanvas-public.s3.amazonaws.com//viscam/data/objaverse_lvis_preprocessed/5fc95fddd9cb4038b767fc5cba588c4b/blender_renders/render_0.0.jpg"
+            }
+        },
+        "rectangular_carpet_1": {
+            "description": "doormat",
+            "category": "objects",
+            "placements": [
+                {
+                    "position": [
+                        0.5,
+                        -2.0,
+                        0.01
+                    ],
+                    "rotation": 0.0,
+                    "scale": 1.0,
+                    "instance_id": null
+                }
+            ],
+            "bbox_size": [
+                3.0,
+                1.63,
+                0.03
+            ],
+            "material": null,
+            "identifier": "d3252312d8604362bd3757346a2b60f9",
+            "metadata": {
+                "annotation": {
+                    "description": "A rectangular, brown, plush rug with a soft texture.",
+                    "category": "rug",
+                    "width": 200,
+                    "depth": 300,
+                    "height": 2,
+                    "volume": 1200,
+                    "materials": [
+                        "fabric",
+                        "air"
+                    ],
+                    "composition": [
+                        0.9,
+                        0.1
+                    ],
+                    "mass": 5,
+                    "receptacle": false,
+                    "frontView": 0,
+                    "onCeiling": false,
+                    "onWall": false,
+                    "onFloor": true,
+                    "onObject": false,
+                    "uid": "d3252312d8604362bd3757346a2b60f9",
+                    "pose_z_rot_angle": -0.0,
+                    "scale": 0.02,
+                    "z_axis_scale": true,
+                    "dim_x": 3.0,
+                    "dim_y": 1.63,
+                    "dim_z": 0.03
+                },
+                "asset_url": "https://playcanvas-public.s3.amazonaws.com//viscam/data/objaverse_lvis_preprocessed/d3252312d8604362bd3757346a2b60f9/processed_asset.glb",
+                "lvis_category": "doormat",
+                "thumbnail_url": "https://playcanvas-public.s3.amazonaws.com//viscam/data/objaverse_lvis_preprocessed/d3252312d8604362bd3757346a2b60f9/blender_renders/render_0.0.jpg"
+            }
+        },
+        "wooden_bookshelf_1": {
+            "description": "bookcase",
+            "category": "objects",
+            "placements": [
+                {
+                    "position": [
+                        -1.0,
+                        1.5,
+                        0.75
+                    ],
+                    "rotation": 0.0,
+                    "scale": 1.0,
+                    "instance_id": null
+                }
+            ],
+            "bbox_size": [
+                1.09,
+                0.93,
+                1.5
+            ],
+            "material": null,
+            "identifier": "c041c4bfae76413485e5b221872372f5",
+            "metadata": {
+                "annotation": {
+                    "description": "A wooden bookshelf with two shelves filled with books and a lower cabinet with two doors.",
+                    "category": "bookshelf",
+                    "width": 80,
+                    "depth": 40,
+                    "height": 150,
+                    "volume": 480,
+                    "materials": [
+                        "wood",
+                        "paper",
+                        "metal",
+                        "air"
+                    ],
+                    "composition": [
+                        0.7,
+                        0.2,
+                        0.05,
+                        0.05
+                    ],
+                    "mass": 50,
+                    "receptacle": true,
+                    "frontView": 2,
+                    "onCeiling": false,
+                    "onWall": false,
+                    "onFloor": true,
+                    "onObject": false,
+                    "uid": "c041c4bfae76413485e5b221872372f5",
+                    "pose_z_rot_angle": -3.14,
+                    "scale": 1.5,
+                    "z_axis_scale": true,
+                    "dim_x": 1.09,
+                    "dim_y": 0.93,
+                    "dim_z": 1.5
+                },
+                "asset_url": "https://playcanvas-public.s3.amazonaws.com//viscam/data/objaverse_lvis_preprocessed/c041c4bfae76413485e5b221872372f5/processed_asset.glb",
+                "lvis_category": "bookcase",
+                "thumbnail_url": "https://playcanvas-public.s3.amazonaws.com//viscam/data/objaverse_lvis_preprocessed/c041c4bfae76413485e5b221872372f5/blender_renders/render_0.0.jpg"
+            }
+        },
+        "small_side_table_1": {
+            "description": "table",
+            "category": "objects",
+            "placements": [
+                {
+                    "position": [
+                        1.5,
+                        -2.0,
+                        0.25
+                    ],
+                    "rotation": 0.0,
+                    "scale": 1.0,
+                    "instance_id": null
+                }
+            ],
+            "bbox_size": [
+                0.37,
+                0.37,
+                0.5
+            ],
+            "material": null,
+            "identifier": "ea81050ee61843658b2b95d94161a2b8",
+            "metadata": {
+                "annotation": {
+                    "description": "A modern round side table with a smooth, flat top and a geometric, crisscrossing metal base.",
+                    "category": "side table",
+                    "width": 40,
+                    "depth": 40,
+                    "height": 50,
+                    "volume": 80,
+                    "materials": [
+                        "metal",
+                        "wood",
+                        "air"
+                    ],
+                    "composition": [
+                        0.6,
+                        0.3,
+                        0.1
+                    ],
+                    "mass": 5,
+                    "receptacle": false,
+                    "frontView": 0,
+                    "onCeiling": false,
+                    "onWall": false,
+                    "onFloor": true,
+                    "onObject": true,
+                    "uid": "ea81050ee61843658b2b95d94161a2b8",
+                    "pose_z_rot_angle": -0.0,
+                    "scale": 0.5,
+                    "z_axis_scale": true,
+                    "dim_x": 0.37,
+                    "dim_y": 0.37,
+                    "dim_z": 0.5
+                },
+                "asset_url": "https://playcanvas-public.s3.amazonaws.com//viscam/data/objaverse_lvis_preprocessed/ea81050ee61843658b2b95d94161a2b8/processed_asset.glb",
+                "lvis_category": "table",
+                "thumbnail_url": "https://playcanvas-public.s3.amazonaws.com//viscam/data/objaverse_lvis_preprocessed/ea81050ee61843658b2b95d94161a2b8/blender_renders/render_0.0.jpg"
+            }
+        },
+        "table_lamp_1": {
+            "description": "table_lamp",
+            "category": "objects",
+            "placements": [
+                {
+                    "position": [
+                        1.5,
+                        -2.0,
+                        0.75
+                    ],
+                    "rotation": 0.0,
+                    "scale": 1.0,
+                    "instance_id": null
+                }
+            ],
+            "bbox_size": [
+                0.25,
+                0.25,
+                0.3
+            ],
+            "material": null,
+            "identifier": "7a35d0c7b80f4ac4b48b87f1e04546dc",
+            "metadata": {
+                "annotation": {
+                    "description": "A small table lamp with a green, pleated lampshade and a brown, round base.",
+                    "category": "table lamp",
+                    "width": 20,
+                    "depth": 20,
+                    "height": 30,
+                    "volume": 9.42,
+                    "materials": [
+                        "plastic",
+                        "metal",
+                        "air"
+                    ],
+                    "composition": [
+                        0.6,
+                        0.2,
+                        0.2
+                    ],
+                    "mass": 0.5,
+                    "receptacle": false,
+                    "frontView": 0,
+                    "onCeiling": false,
+                    "onWall": false,
+                    "onFloor": true,
+                    "onObject": true,
+                    "uid": "7a35d0c7b80f4ac4b48b87f1e04546dc",
+                    "pose_z_rot_angle": -0.0,
+                    "scale": 0.3,
+                    "z_axis_scale": true,
+                    "dim_x": 0.25,
+                    "dim_y": 0.25,
+                    "dim_z": 0.3
+                },
+                "asset_url": "https://playcanvas-public.s3.amazonaws.com//viscam/data/objaverse_lvis_preprocessed/7a35d0c7b80f4ac4b48b87f1e04546dc/processed_asset.glb",
+                "lvis_category": "table_lamp",
+                "thumbnail_url": "https://playcanvas-public.s3.amazonaws.com//viscam/data/objaverse_lvis_preprocessed/7a35d0c7b80f4ac4b48b87f1e04546dc/blender_renders/render_0.0.jpg"
+            }
+        }
+    },
+    "room_type": "an interior scene"
+}
